@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Monoton&family=Nanum+Pen+Script&family=Noto+Sans+Symbols+2&family=Protest+Revolution&family=Rubik+Bubbles&display=swap');
+:root{
+    --flax: #E9D985;
+    --imperial_red:#F71735;
+    --turqusie: #41EAD4;
+    --Yimin_blue:#2E5077;
+    --vista_blue:#809BCE;
+}
+
+/*
+collor palete
+#E9D985-flax
+#F71735-imperial red
+#41EAD4-turqusie
+#2E5077-Yimin blue
+#809BCE-vista blue
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+background-color: #F71735;
+height: 20vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color:#809BCE ;
+}
+.nav-logo{
+    height: 20vh;
+    padding: 1vmin;
+}
+.nav-link{
+    padding-right: 1vmin;
+    text-decoration: none;
+    color:#2E5077 ;
+    font-size: 3vmin;
+    font-family: Rubik Bubbles;
+}
+.nav-title{
+    font-size: 10vh;
+    font-family: Protest Revolution;
+ 
+}
+.nav-link:hover{
+    text-decoration:underline;
+    font-size: 11vh;
+}
+.body-content{
+    width: 100%;
+    height: fit-content;
+  min-height:80vh ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  background: linear-gradient(0.25turn, var(--Yimin_blue), var(--vista_blue), var(--Yimin_blue));
+}
+.footer{
+    background-color: var(--flax);
+    height: fit-content;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-grid{
+    margin-top               : 10vh;
+    width: 60%;
+    height: 60vh;
+    background-color: var(--turqusie);
+    border-radius: grid;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:1vmin ;
+
+}
+
+.lyric{
+    font-size:4vmin;
+    text-align: center;
+    color:var(--imperial_red) ;
+   margin-top: 2vmin;
+   font-family: Rubik Bubbles;
+}
+.image-box{
+width: 100%;
+height: 100%;
+max-height: 60vh;
+position: relative;
+top: 0;
+left: 0;
+}
+.music-image{
+    width: 45vmin;
+    height: 45vmin;
+    transition: .05 ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+transform: translateX(-50%) translateY(-50%);
+z-index: 1;
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*play button*/
+.song-name{
+    font-size: 8.5vmin;
+    color: var(--Yimin_blue);
+    text-align: center;
+    line-height: 80%;
+    margin-bottom: 2vmin;
+    font-family: monoton;
+}
+
+.music-supp-text{
+    font-size: 4vmin;
+    text-align: center;
+    font-family: Rubik Bubbles;
+}
+
+.artist-name{
+    font-size: 5vmin;
+    color: var(--Yimin_blue);
+    text-align: center;
+    font-family: monoton;
+}
+.album{
+    color: var(--Yimin_blue);
+    font-size: 5vmin;
+    text-align: center;
+font-family: monoton;
+}
+.song-link{
+    font-size: 3vmin;
+    color: var(--Yimin_blue);
+    text-decoration: none;
+}
+
+.song-link:hover{
+    text-decoration: underline;
+    scale: 1.21;
+}
